@@ -17,6 +17,22 @@
           </h1>
         </div>
       </nav>
+      <div class="modal--container hidden">
+        <div class="modal--container--inner">
+          <div class="modal--container--content">
+            <div class="modal--container--top">
+              <h3 data-type-modal-title>Title</h3>
+              <button
+                class="modal--container--close-btn"
+                data-type-modal="close"
+              >
+                Close
+              </button>
+            </div>
+            <div class="modal--container--body"></div>
+          </div>
+        </div>
+      </div>
       <section class="content--section">
         <div class="content--inner">
           <div class="column">
@@ -90,8 +106,12 @@
       <footer>
         <div class="footer--inner">
           <div class="column">
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Privacy Policy</a>
+            <button data-type-modal="terms_cond" class="footer--btns">
+              Terms & Conditions
+            </button>
+            <button data-type-modal="privacy_policy" class="footer--btns">
+              Privacy Policy
+            </button>
           </div>
           <div class="column">
             <a href="#">Business Capital</a>
@@ -111,7 +131,7 @@
         </div>
       </footer>
     </main>
-
-    <script src="src/index.js"></script>
+    <script src="src/index.js" type="module"></script>
+    <!-- <script src="modal_data.js"></script> -->
   </body>
 </html>
